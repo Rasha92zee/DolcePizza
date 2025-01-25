@@ -1,60 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DolcePizza</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="background" id="stars"></div>
     <!-- header -->
-     <header>
-        <a href="" class="logo"><img src="/images/logo.png" alt="logo"></a>
-        <ul class="navbar">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#menu">Menu</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-        <div class="h-icons">
-			<a href="#"><i class='fa-solid fa-magnifying-glass' ></i></a>
-			<a href="#"><i class='fa-solid fa-cart-plus' ></i></a>
-            <a href="#"><i class='fa-solid fa-house' ></i></a>
-			<!-- <div class="bx bx-menu" id="menu-icon"></div> -->
-		</div>
-     </header>
+    <header>
+      <a href="" class="logo"><img src="/images/logo.png" alt="logo" /></a>
+      <ul class="navbar">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="h-icons">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+      </div>
+    </header>
 
-     <section class="section1">
-        <div class="container1">
-            <h1>At DolcePizza, every bite tells a delicious story!</h1>
-            <h3>Indulge in the perfect slice crafted with love and authentic ingredients. From our oven to your table, experience the ultimate in flavor and freshness.</h3>
-            <a href="" class="btn1">Order Now</a>
-            <a href="" class="btn1">View More</a>
+    <section class="home__section">
+      <div class="home__container">
+        <h1>At DolcePizza, every bite tells a delicious story!</h1>
+        <h3>
+          Indulge in the perfect slice crafted with love and authentic
+          ingredients. From our oven to your table, experience the ultimate in
+          flavor and freshness.
+        </h3>
+        <a href="" class="home__btn">Order Now</a>
+        <a href="" class="home__btn">View More</a>
+      </div>
+      <img src="./images/RotatingPizza.png" alt="rotating-pizza" />
+    </section>
+    <br> <br>
+    <section class="about__section">
+      <div class="about__container">
+        <div class="about__data">
+          <h1 class="about__title">
+            Our Story: The Art  <br />
+            of Pizza Perfection
+          </h1>
+          <p class="about__description">
+            At DolcePizza, we believe that pizza is more than just food; it's an experience. 
+            With recipes passed down through generations, we combine time-honored traditions 
+            with modern culinary innovations to craft pizzas that are as heartwarming as they 
+            are delicious. Every ingredient is handpicked for its quality, and every bite is a 
+            celebration of our love for authentic, artisan pizza."
+          </p>
+          <a href="#products" class="button">Order Pizza Now</a>
         </div>
-        <img src="./images/RotatingPizza.png" alt="rotating-pizza">
-     </section>
 
-     <script>
-        //Generate random stars
-        function createStars() {
-            const starsContainer = document.getElementById('stars');
-            const windowWidth = window.innerWidth;
-            const windowHeight = window.innerHeight;
+        <div class="about__images">
+          <img
+            src="/images/about-pizza.png"
+            alt="image"
+            class="about__pizza"
+          />
+          <img
+            src="/images/about-board.png"
+            alt="image"
+            class="about__board"
+          />
+          <img
+            src="/images/about-leaf-1.png"
+            alt="image"
+            class="about__ingredient about__leaf-1"
+          />
+          <img
+            src="/images/about-leaf-2.png"
+            alt="image"
+            class="about__ingredient about__leaf-2"
+          />
+          <img
+            src="/images/about-pepperoni.png"
+            alt="image"
+            class="about__ingredient about__pepperoni"
+          />
+          <img
+            src="/images/about-mushroom.png"
+            alt="image"
+            class="about__ingredient about__mushroom"
+          />
+          <img
+            src="/images/about-olive.png"
+            alt="image"
+            class="about__ingredient about__olive"
+          />
+          <img
+            src="/images/about-tomato.png"
+            alt="image"
+            class="about__ingredient about__tomato"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+        <br><br><br><br> <br><br><br><br><br>
+    </section>
 
-            for (let i = 0; i < 100; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = `${Math.random() * windowWidth}px`;
-                star.style.top = `${Math.random() * windowHeight}px`;
-                starsContainer.appendChild(star);
-            }
+    <script src="/js/scrollreveal.min.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+      //Generate random stars
+      function createStars() {
+        const starsContainer = document.getElementById("stars");
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        for (let i = 0; i < 100; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.left = `${Math.random() * windowWidth}px`;
+          star.style.top = `${Math.random() * windowHeight}px`;
+          starsContainer.appendChild(star);
         }
-        // Call the createStars function when the page loads
-        window.addEventListener('load', createStars);
-     </script>
-</body>
+      }
+      // Call the createStars function when the page loads
+      window.addEventListener("load", createStars);
+    </script>
+  </body>
 </html>
