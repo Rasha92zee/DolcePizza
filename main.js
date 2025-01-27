@@ -1,3 +1,12 @@
+// SWIPER
+const swiperMenu = new Swiper('.menu__swiper', {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+})
+
+
 // SCROLL REVEAL ANIMATION
 const sr = ScrollReveal({
     origin: 'top',

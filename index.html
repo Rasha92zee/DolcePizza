@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DolcePizza</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
+    <!-- swiper/css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css" /> 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -49,35 +50,29 @@
       </div>
       <img src="./images/RotatingPizza.png" alt="rotating-pizza" />
     </section>
-    <br> <br>
+    <br />
+    <br />
     <section class="about__section">
       <div class="about__container">
         <div class="about__data">
           <h1 class="about__title">
-            Our Story: The Art  <br />
+            Our Story: The Art <br />
             of Pizza Perfection
           </h1>
           <p class="about__description">
-            At DolcePizza, we believe that pizza is more than just food; it's an experience. 
-            With recipes passed down through generations, we combine time-honored traditions 
-            with modern culinary innovations to craft pizzas that are as heartwarming as they 
-            are delicious. Every ingredient is handpicked for its quality, and every bite is a 
+            At DolcePizza, we believe that pizza is more than just food; it's an
+            experience. With recipes passed down through generations, we combine
+            time-honored traditions with modern culinary innovations to craft
+            pizzas that are as heartwarming as they are delicious. Every
+            ingredient is handpicked for its quality, and every bite is a
             celebration of our love for authentic, artisan pizza."
           </p>
           <a href="#products" class="button">Order Pizza Now</a>
         </div>
 
         <div class="about__images">
-          <img
-            src="/images/about-pizza.png"
-            alt="image"
-            class="about__pizza"
-          />
-          <img
-            src="/images/about-board.png"
-            alt="image"
-            class="about__board"
-          />
+          <img src="/images/about-pizza.png" alt="image" class="about__pizza" />
+          <img src="/images/about-board.png" alt="image" class="about__board" />
           <img
             src="/images/about-leaf-1.png"
             alt="image"
@@ -111,11 +106,56 @@
         </div>
       </div>
     </section>
-    <section>
-        <br><br><br><br> <br><br><br><br><br>
+
+    <section class="menu__section">
+      <div class="menu__container">
+        <div class="menu__data">
+          <h2 class="menu__title1">Discover <br/> Popular Orders</h2>
+          <p class="menu__desc">
+            We have collected some popular flavours from around the world for
+            you to choose your favourite. <br> Each bite is crafted to bring you an 
+            authentic and unforgettable taste experience!
+          </p>
+        </div>
+
+        <div class="menu__swiper swiper">
+          <img
+            src="./images/menu-dish.png"
+            alt="image"
+            class="menu__dish"
+          />
+          <div class="swiper-wrapper">
+            <article class="menu__card swiper-slide">
+              <img
+                src="./images/menu-1.png"
+                alt="image"
+                class="menu__img"
+              />
+              <h3 class="menu__title">Margherita Pizza</h3>
+            </article>
+            <article class="menu__card swiper-slide">
+              <img
+                src="./images/menu-2.png"
+                alt="image"
+                class="menu__img"
+              />
+              <h3 class="menu__title">Mushroom Pizza</h3>
+            </article>
+            <article class="menu__card swiper-slide">
+              <img
+                src="./images/menu-3.png"
+                alt="image"
+                class="menu__img"
+              />
+              <h3 class="menu__title">Pepperoni Pizza</h3>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="/js/scrollreveal.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 
     <script>
