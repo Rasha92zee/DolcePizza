@@ -319,7 +319,8 @@ header {
 	grid-template-columns: 100%;
     gap: 2rem; /* Space between sections */
     padding-bottom: 2rem;
-    max-width: 800px; /* Adjust width */
+    max-width: 800px; 
+	max-height: 320px;
     margin: 300px auto; /* Center everything */
     text-align: center; /* Align text */
 }
@@ -381,4 +382,74 @@ header {
 	opacity: 1;
   }
 
+  /* ====================== Recipe section ===================== */
+/* General Styles */
+.section__title {
+    text-align: center; /* Center the title */
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    color: var(--text-color);
+	font-style: italic;
+}
+
+/* Recipe Container - Two Column Layout */
+.recipe__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Left Column - Ingredients List */
+.recipe__list {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for ingredients */
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+/* Individual Ingredient Cards */
+.recipe__ingredient {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .7rem;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    background-color: #fff5e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe__image {
+    width: 50px; /* Smaller size for ingredient images */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+	/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  */
+}
+
+.recipe__name {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.recipe__description {
+    font-size: 0.9rem;
+    color: var(--bg-color);
+    margin-top: 0.2rem;
+}
+
+/* Right Column - Main Recipe Image */
+.recipe__container img[alt="recipe-pizza"] {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Ensures image doesn't overflow */
+    justify-self: center; /* Center the image in the column */
+}
 
