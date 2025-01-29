@@ -18,11 +18,13 @@
 	--h2-font: 2.6rem;
 	--p-font: 1.1rem;
 }
-html, body {
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-    width: 100%;
+
+html,
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 body {
@@ -219,7 +221,8 @@ header {
 	display: flex;
 	align-items: center;
 }
-.about__data{
+
+.about__data {
 	width: 50%;
 }
 
@@ -229,11 +232,12 @@ header {
 }
 
 .about__description {
-	word-spacing: 3px; /* Adjust spacing between words */
-    line-height: 1.5;
+	word-spacing: 3px;
+	/* Adjust spacing between words */
+	line-height: 1.5;
 	padding: 0px 70px 30px 0px;
 	text-align: justify;
-    text-justify: distribute;
+	text-justify: distribute;
 }
 
 .about__images {
@@ -312,34 +316,39 @@ header {
 	background-color: var(--main-color);
 	box-shadow: 0 0 10px 2px var(--main-color);
 }
+
 /* ======================= Menu Section ========================== */
 
 .menu__container {
-    display: grid;
+	display: grid;
 	grid-template-columns: 100%;
-    gap: 2rem; /* Space between sections */
-    padding-bottom: 2rem;
-    max-width: 800px; 
+	gap: 2rem;
+	/* Space between sections */
+	padding-bottom: 2rem;
+	max-width: 800px;
 	max-height: 320px;
-    margin: 300px auto; /* Center everything */
-    text-align: center; /* Align text */
+	margin: 300px auto;
+	/* Center everything */
+	text-align: center;
+	/* Align text */
 }
 
 .menu__title1 {
-    font-size: 2.5rem;
-    color: var(--text-color);
-    margin-bottom: 1rem;
+	font-size: 2.5rem;
+	color: var(--text-color);
+	margin-bottom: 1rem;
 }
 
 .menu__desc {
-    font-size: 1rem;
-    color: var(--text-color);
-    text-align: center;
+	font-size: 1rem;
+	color: var(--text-color);
+	text-align: center;
 }
 
 .menu__dish {
-    width: 300px;
-    justify-self: center; /* Center image */
+	width: 300px;
+	justify-self: center;
+	/* Center image */
 	position: absolute;
 }
 
@@ -348,25 +357,29 @@ header {
 	margin-top: 2.5rem;
 	opacity: 0;
 	transition: opacity .4s;
+	color: var(--main-color);
+	font-style: oblique;
 }
 
 .menu__swiper {
-    display: grid;
-    gap: 1.5rem;
-    justify-items: center;
+	display: grid;
+	gap: 1.5rem;
+	justify-items: center;
 	width: 800px;
 	overflow-x: clip;
 	justify-self: center;
 }
+
 .menu__card {
-    flex: 0 0 260px; /* Fix width per card */
+	flex: 0 0 260px;
+	/* Fix width per card */
 }
 
 .menu__img {
 	padding-top: 18px;
-    width: 270px;
+	width: 270px;
 	transform: scale(0.8) rotate(-90deg);
-    transition: transform 0.4s;
+	transition: transform 0.4s;
 }
 
 /* swiper class */
@@ -376,80 +389,110 @@ header {
 
 :is(.swiper-slide-active, .swiper-slide-duplicate-active) .menu__img {
 	transform: scale(1) rotate(0);
-  }
-  
-  :is(.swiper-slide-active, .swiper-slide-duplicate-active) .menu__title {
-	opacity: 1;
-  }
+}
 
-  /* ====================== Recipe section ===================== */
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .menu__title {
+	opacity: 1;
+}
+
+/* ====================== Recipe section ===================== */
 /* General Styles */
 .section__title {
-    text-align: center; /* Center the title */
-    font-size: 2.5rem;
-    margin-bottom: .5rem;
-    color: var(--text-color);
-	font-style: italic;
+	text-align: center;
+	/* Center the title */
+	font-size: 2.5rem;
+	margin-bottom: -.51rem;
+	color: var(--text-color);
 }
 
 /* Recipe Container - Two Column Layout */
 .recipe__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* Two equal columns */
+	gap: 2rem;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
 /* Left Column - Ingredients List */
 .recipe__list {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column for ingredients */
-    gap: 1rem;
-    padding-right: 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	/* Single column for ingredients */
+	gap: 1rem;
+	padding-right: 1rem;
 }
 
 /* Individual Ingredient Cards */
 .recipe__ingredient {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: .7rem;
-    /* border: 1px solid #ddd; */
-    border-radius: 10px;
-    background-color: #fff5e1;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: .7rem;
+	/* border: 1px solid #ddd; */
+	border-radius: 10px;
+	background-color: #fff5e1;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .recipe__image {
-    width: 50px; /* Smaller size for ingredient images */
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
+	width: 50px;
+	/* Smaller size for ingredient images */
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
 	/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  */
 }
 
 .recipe__name {
-    font-size: 1.2rem;
-    color: var(--main-color);
-    margin: 0;
+	font-size: 1.2rem;
+	color: var(--main-color);
+	margin: 0;
 }
 
 .recipe__description {
-    font-size: 0.9rem;
-    color: var(--bg-color);
-    margin-top: 0.2rem;
+	font-size: 0.9rem;
+	color: var(--bg-color);
+	margin-top: 0.2rem;
 }
 
 /* Right Column - Main Recipe Image */
 .recipe__container img[alt="recipe-pizza"] {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Ensures image doesn't overflow */
-    justify-self: center; /* Center the image in the column */
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+	/* Ensures image doesn't overflow */
+	justify-self: center;
+	/* Center the image in the column */
 }
 
+/* ===================== Service sectiopn =====================*/
+.service-item i {
+	color: var(--main-color);
+}
+
+.container-xxl {
+	padding-left: 50px;
+}
+
+.service-item {
+	transition: .5s;
+	border-radius: 15px;
+}
+
+.service-item:hover {
+	background-color: var(--main-color);
+}
+
+.service-item:hover * {
+	color: var(--second-color) !important;
+}
+
+.service-item p {
+	padding-top: 0.2rem;
+}
